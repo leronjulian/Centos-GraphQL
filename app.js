@@ -13,7 +13,7 @@ app.get('/graphql', (req, res) => {
 
     var obj = 
     [
-      {title: 'Testing', author: 'Testing '}
+      {title: 'Green Eggs & Ham', author: 'Dr. Suess'}
     ];
 
     dbo.collection("books_db").insertMany(obj, function(err, res){
