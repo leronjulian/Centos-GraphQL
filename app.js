@@ -13,7 +13,7 @@ app.get('/graphql', (req, res) => {
 
     var obj = 
     [
-      {title: 'Testing', author: 'Testing'}
+      {title: 'Testing', author: 'Testing '}
     ];
 
     dbo.collection("books_db").insertMany(obj, function(err, res){
@@ -22,7 +22,7 @@ app.get('/graphql', (req, res) => {
       db.close()
     });
 
-  res.send("Hello");
+  res.send("Inserted Into Database");
 })
   	  	
   /*
